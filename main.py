@@ -8,7 +8,7 @@ from sqlalchemy import func
 import uvicorn
 
 app = FastAPI(debug=True)
-templates = Jinja2Templates("lotrq_app/templates")
+templates = Jinja2Templates("./templates")
 
 Base.metadata.create_all(bind=engine)
 
