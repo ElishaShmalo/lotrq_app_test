@@ -2,8 +2,8 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
-from lotrq_app.database import Base, engine, SessionLocal
-from lotrq_app.models import *
+from database import Base, engine, SessionLocal
+from models import *
 from sqlalchemy import func
 import uvicorn
 
